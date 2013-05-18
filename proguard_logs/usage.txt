@@ -1,0 +1,11 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.darkowlzz.poda.BuildConfig
+com.darkowlzz.poda.R
+com.darkowlzz.poda.R$attr
+com.darkowlzz.poda.R$drawable
+com.darkowlzz.poda.R$id
+com.darkowlzz.poda.R$layout
+com.darkowlzz.poda.R$menu
+com.darkowlzz.poda.R$raw
+com.darkowlzz.poda.R$string

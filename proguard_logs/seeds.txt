@@ -1,0 +1,23 @@
+com.darkowlzz.poda.MainActivity
+com.darkowlzz.poda.MainActivity: MainActivity()
+com.darkowlzz.poda.R$drawable: int bg
+com.darkowlzz.poda.R$drawable: int ic_launcher
+com.darkowlzz.poda.R$id: int button
+com.darkowlzz.poda.R$id: int credits
+com.darkowlzz.poda.R$id: int text
+com.darkowlzz.poda.R$layout: int credits
+com.darkowlzz.poda.R$layout: int main
+com.darkowlzz.poda.R$menu: int options
+com.darkowlzz.poda.R$raw: int poda1
+com.darkowlzz.poda.R$raw: int poda10
+com.darkowlzz.poda.R$raw: int poda11
+com.darkowlzz.poda.R$raw: int poda12
+com.darkowlzz.poda.R$raw: int poda2
+com.darkowlzz.poda.R$raw: int poda4
+com.darkowlzz.poda.R$raw: int poda5
+com.darkowlzz.poda.R$raw: int poda6
+com.darkowlzz.poda.R$raw: int poda7
+com.darkowlzz.poda.R$raw: int poda8
+com.darkowlzz.poda.R$raw: int poda9
+com.darkowlzz.poda.R$string: int app_name
+com.darkowlzz.poda.R$string: int speak

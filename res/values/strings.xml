@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PODA!!</string>
+    <string name="speak">Say it!</string>
+    <string name="version">0.03</string>
+    <string name="release_date">18/May/2013</string>
+
+    <!-- Credits -->
+    <string name="credits_title">Credits</string>
+    <string name="credits_head">Contributors:</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_head">PODA!!</string>
+    <string name="about_version">Version: </string>
+    <string name="about_release">Release Date: </string>
+</resources>
