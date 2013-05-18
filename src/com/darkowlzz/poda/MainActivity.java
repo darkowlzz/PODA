@@ -54,6 +54,7 @@ public class MainActivity extends Activity
         return true;
     }
 
+
     //////////////////////////////// Options Menu code ////////////////////////////////////
 
     /** Called when an item is selected from the Menu. */
@@ -109,6 +110,7 @@ public class MainActivity extends Activity
 
         return r;
     }
+
 
     ///////////////////////// Audio player code //////////////////////////////////
 
