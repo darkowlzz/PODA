@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">PODA!!</string>
     <string name="speak">Say it!</string>
-    <string name="version">0.03</string>
-    <string name="release_date">18/May/2013</string>
+    <string name="version">0.04</string>
+    <string name="release_date">19/May/2013</string>
 
     <!-- Credits -->
     <string name="credits_title">Credits</string>

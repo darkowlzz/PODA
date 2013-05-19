@@ -3,25 +3,20 @@ package com.darkowlzz.poda;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.*;
 
 public class MainActivity extends Activity
 {
+    Sound sound = new Sound();
     Context context = this;
-    Button mButton;
-    MediaPlayer mp = null;
-    Random rand = new Random();
-
-    private static LinkedList<Integer> randomHistory = new LinkedList<Integer>();
+    ImageButton mButton;
 
     // Clean this shit once I learn SAX.
     String[] contributors = {
@@ -39,13 +34,14 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        mButton = (Button) findViewById(R.id.button);
+        mButton = (ImageButton) findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playSound();
+                sound.playSound(context);
             }
         });
+
     }
 
     /** Called when the optionsMenu is requested. */
@@ -92,63 +88,10 @@ public class MainActivity extends Activity
         String names = "";
         Arrays.sort(contributors);
         for (String contributor : contributors) names += contributor + ", ";
+        // Remove ", " from the end.
         names = names.substring( 0, names.length() - 2);
 
         return names;
     }
 
-    /** Return random numbers with 5 non-repeating numbers */
-    private Integer getRandom() {
-        Integer r = rand.nextInt(11);
-        if (randomHistory.contains(r)) {
-            return getRandom();
-        }
-        randomHistory.add(r);
-        if (randomHistory.size() > 5) {
-            randomHistory.remove();
-        }
-
-        return r;
-    }
-
-
-    ///////////////////////// Audio player code //////////////////////////////////
-
-    /** Called when an audio play is requested. */
-    private void playSound() {
-        switch(getRandom()) {
-            case 0: mp = MediaPlayer.create(MainActivity.this, R.raw.poda1);
-                    break;
-            case 1: mp = MediaPlayer.create(MainActivity.this, R.raw.poda2);
-                    break;
-            case 2: mp = MediaPlayer.create(MainActivity.this, R.raw.poda4);
-                    break;
-            case 3: mp = MediaPlayer.create(MainActivity.this, R.raw.poda5);
-                break;
-            case 4: mp = MediaPlayer.create(MainActivity.this, R.raw.poda6);
-                break;
-            case 5: mp = MediaPlayer.create(MainActivity.this, R.raw.poda7);
-                break;
-            case 6: mp = MediaPlayer.create(MainActivity.this, R.raw.poda8);
-                break;
-            case 7: mp = MediaPlayer.create(MainActivity.this, R.raw.poda9);
-                break;
-            case 8: mp = MediaPlayer.create(MainActivity.this, R.raw.poda10);
-                break;
-            case 9: mp = MediaPlayer.create(MainActivity.this, R.raw.poda11);
-                break;
-            case 10: mp = MediaPlayer.create(MainActivity.this, R.raw.poda12);
-                break;
-        }
-
-        /** To release the MediaPlayer. */
-        mp.setOnCompletionListener(new OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-
-        mp.start();
-    }
 }

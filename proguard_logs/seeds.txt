@@ -1,12 +1,19 @@
 com.darkowlzz.poda.MainActivity
 com.darkowlzz.poda.MainActivity: MainActivity()
+com.darkowlzz.poda.R$dimen: int speak
 com.darkowlzz.poda.R$drawable: int bg
 com.darkowlzz.poda.R$drawable: int ic_launcher
+com.darkowlzz.poda.R$drawable: int shout
+com.darkowlzz.poda.R$id: int about
 com.darkowlzz.poda.R$id: int button
 com.darkowlzz.poda.R$id: int credits
 com.darkowlzz.poda.R$id: int text
+com.darkowlzz.poda.R$id: int textView
+com.darkowlzz.poda.R$id: int widget_button
+com.darkowlzz.poda.R$layout: int about
 com.darkowlzz.poda.R$layout: int credits
 com.darkowlzz.poda.R$layout: int main
+com.darkowlzz.poda.R$layout: int widget
 com.darkowlzz.poda.R$menu: int options
 com.darkowlzz.poda.R$raw: int poda1
 com.darkowlzz.poda.R$raw: int poda10
@@ -19,5 +26,16 @@ com.darkowlzz.poda.R$raw: int poda6
 com.darkowlzz.poda.R$raw: int poda7
 com.darkowlzz.poda.R$raw: int poda8
 com.darkowlzz.poda.R$raw: int poda9
+com.darkowlzz.poda.R$string: int about_head
+com.darkowlzz.poda.R$string: int about_release
+com.darkowlzz.poda.R$string: int about_title
+com.darkowlzz.poda.R$string: int about_version
 com.darkowlzz.poda.R$string: int app_name
+com.darkowlzz.poda.R$string: int credits_head
+com.darkowlzz.poda.R$string: int credits_title
+com.darkowlzz.poda.R$string: int release_date
 com.darkowlzz.poda.R$string: int speak
+com.darkowlzz.poda.R$string: int version
+com.darkowlzz.poda.R$xml: int widget_provider
+com.darkowlzz.poda.Widget
+com.darkowlzz.poda.Widget: Widget()
